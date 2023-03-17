@@ -1,12 +1,10 @@
 module register_m #(parameter WIDTH = 8)(q,d,enb,rst_,clk);  
  
-//   localparam time WIDTH  =  8 ;
  
- 
-  output logic [WIDTH-1:0] q ; // register data output
-  input  logic [WIDTH-1:0] d ; // register_test data input
-  input  logic             enb   ; // register_test enable
-  input  logic             rst_  ; // register_test reset (asynch)
+  output logic [WIDTH-1:0] q ; 
+  input  logic [WIDTH-1:0] d ; 
+  input  logic             enb   ; 
+  input  logic             rst_  ; 
   input  logic             clk   ;
  
   timeunit        1ns ;
